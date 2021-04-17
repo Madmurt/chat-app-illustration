@@ -1,0 +1,23 @@
+{
+  "name": "chat-app-illustration",
+  "version": "1.0.0",
+  "description": "Fun challenge using css and html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madmurt/chat-app-illustration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Madmurt/chat-app-illustration/issues"
+  },
+  "homepage": "https://github.com/Madmurt/chat-app-illustration#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
