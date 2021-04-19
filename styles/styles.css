@@ -52,7 +52,8 @@ body {
   --clr-LightGrayishViolet: hsl(270, 20%, 96%);
   --clr-LightMagenta: hsl(293, 100%, 63%);
   --clr-LightViolet: hsl(264, 100%, 61%);
-  --clr-ModerateViolet: hsl(276, 41%, 93%); }
+  --clr-ModerateViolet: hsl(276, 41%, 93%);
+  --clr-DesaturatedDarkViolet: hsl(271, 15%, 43%); }
 
 .phone {
   position: relative;
@@ -108,3 +109,57 @@ body {
       position: absolute;
       left: 17px;
       top: 130px; }
+    .phone__from-message-box.\--third-message {
+      position: absolute;
+      left: 17px;
+      top: 309px;
+      height: 45px; }
+  .phone__to-message-box {
+    width: 128px;
+    height: 34px;
+    background-color: var(--clr-White);
+    border-radius: 10px 10px 4px 10px; }
+    .phone__to-message-box.\--first-message {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      right: 17px;
+      top: 180px;
+      width: 136px;
+      height: 40px;
+      background-color: none; }
+    .phone__to-message-box.\--image {
+      height: 40px;
+      width: 40px; }
+    .phone__to-message-box.\--second-message {
+      position: absolute;
+      right: 17px;
+      top: 228px; }
+    .phone__to-message-box.\--third-message {
+      position: absolute;
+      right: 17px;
+      top: 270px;
+      width: 80px;
+      height: 23px; }
+  .phone__offer-message-box {
+    width: 160px;
+    height: 32px;
+    background: linear-gradient(to bottom, var(--clr-LightViolet), var(--clr-LightMagenta));
+    border-radius: 10px 10px 10px 4px; }
+    .phone__offer-message-box.\--first-message {
+      position: absolute;
+      left: 17px;
+      top: 362px; }
+    .phone__offer-message-box.\--second-message {
+      position: absolute;
+      left: 17px;
+      top: 402px; }
+  .phone__text-input {
+    position: absolute;
+    width: 213px;
+    height: 34px;
+    bottom: 21px;
+    left: 17px;
+    background-color: var(--clr-White);
+    border-radius: 16.9544px; }
