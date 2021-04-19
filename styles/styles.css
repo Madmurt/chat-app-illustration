@@ -52,8 +52,10 @@ body {
   --clr-LightGrayishViolet: hsl(270, 20%, 96%);
   --clr-LightMagenta: hsl(293, 100%, 63%);
   --clr-LightViolet: hsl(264, 100%, 61%);
-  --clr-ModerateViolet: hsl(276, 41%, 93%);
-  --clr-DesaturatedDarkViolet: hsl(271, 15%, 43%); }
+  --clr-LightGray: hsl(276, 41%, 93%);
+  --clr-ModerateViolet: hsl(276, 55%, 52%);
+  --clr-DesaturatedDarkViolet: hsl(271, 15%, 43%);
+  --clr-VeryLightMagenta: hsl(289, 100%, 72%); }
 
 .phone {
   position: relative;
@@ -63,7 +65,8 @@ body {
   margin-bottom: 64px;
   background-color: var(--clr-White);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 30px; }
+  border-radius: 30px;
+  font-family: 'Rubik', sans-serif; }
   .phone__outer-rim {
     position: absolute;
     width: 247px;
@@ -97,10 +100,11 @@ body {
     border-top-left-radius: calc(30px - 10.25px);
     border-top-right-radius: calc(30px - 10.25px); }
   .phone__from-message-box {
-    width: 128px;
-    height: 34px;
-    background-color: var(--clr-ModerateViolet);
-    border-radius: 10px 10px 10px 4px; }
+    width: calc(128px - 16px);
+    max-height: 34px;
+    background-color: var(--clr-LightGray);
+    border-radius: 10px 10px 10px 4px;
+    padding: 6px 8px; }
     .phone__from-message-box.\--first-message {
       position: absolute;
       left: 17px;
@@ -113,10 +117,8 @@ body {
       position: absolute;
       left: 17px;
       top: 309px;
-      height: 45px; }
+      max-height: 45px; }
   .phone__to-message-box {
-    width: 128px;
-    height: 34px;
     background-color: var(--clr-White);
     border-radius: 10px 10px 4px 10px; }
     .phone__to-message-box.\--first-message {
@@ -128,25 +130,32 @@ body {
       top: 180px;
       width: 136px;
       height: 40px;
-      background-color: none; }
+      background-color: unset; }
     .phone__to-message-box.\--image {
       height: 40px;
       width: 40px; }
     .phone__to-message-box.\--second-message {
+      max-width: calc(128px - 16px);
+      max-height: 34px;
       position: absolute;
       right: 17px;
-      top: 228px; }
+      top: 228px;
+      padding: 6px 8px; }
     .phone__to-message-box.\--third-message {
+      max-height: 34px;
       position: absolute;
       right: 17px;
       top: 270px;
       width: 80px;
-      height: 23px; }
+      max-height: 23px;
+      padding: 6px 8px; }
   .phone__offer-message-box {
-    width: 160px;
-    height: 32px;
+    width: calc(160px - 16px);
+    height: calc(32px - 20px);
     background: linear-gradient(to bottom, var(--clr-LightViolet), var(--clr-LightMagenta));
-    border-radius: 10px 10px 10px 4px; }
+    border-radius: 10px 10px 10px 4px;
+    box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045);
+    padding: 10px 8px; }
     .phone__offer-message-box.\--first-message {
       position: absolute;
       left: 17px;
@@ -155,6 +164,31 @@ body {
       position: absolute;
       left: 17px;
       top: 402px; }
+  .phone__offer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .phone__offer-checkbox {
+    height: 12px;
+    width: 12px;
+    border: 1px solid var(--clr-VeryLightMagenta);
+    border-radius: 50%;
+    box-sizing: border-box; }
+  .phone__offer-text {
+    font-weight: 400;
+    color: var(--clr-White);
+    font-size: 0.5rem;
+    line-height: 11px;
+    margin: 0;
+    margin-left: 8px; }
+  .phone__offer-amount {
+    color: var(--clr-White);
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0;
+    margin-left: 35px; }
+    .phone__offer-amount.\--second-message {
+      margin-left: 50px; }
   .phone__text-input {
     position: absolute;
     width: 213px;
@@ -163,3 +197,15 @@ body {
     left: 17px;
     background-color: var(--clr-White);
     border-radius: 16.9544px; }
+  .phone__from-text {
+    font-weight: 400;
+    color: var(--clr-ModerateViolet);
+    font-size: 0.5rem;
+    line-height: 11px;
+    margin: 0; }
+  .phone__to-text {
+    font-weight: 400;
+    color: var(--clr-DesaturatedDarkViolet);
+    font-size: 0.5rem;
+    line-height: 11px;
+    margin: 0; }
