@@ -1,8 +1,17 @@
 :root {
-	--clr-VeryDarkDesaturatedViolet: sl(271, 36%, 24%);
+	--clr-VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
 	--clr-DarkGrayishViolet: hsl(268, 7%, 64%);
+	--clr-LightViolet: hsl(264, 100%, 61%);
+	--clr-White: hsl(0, 0%, 100%);
+	--clr-LightGrayishViolet: hsl(270, 20%, 96%);
 	--clr-LightMagenta: hsl(293, 100%, 63%);
 	--clr-LightViolet: hsl(264, 100%, 61%);
+	--clr-LightGray: hsl(276, 41%, 93%);
+	--clr-ModerateViolet: hsl(276, 55%, 52%);
+	--clr-DesaturatedDarkViolet: hsl(271, 15%, 43%);
+	--clr-VeryLightMagenta: hsl(289, 100%, 72%);
+	--clr-GrayishBlue: hsl(206, 6%, 79%);
+	--clr-PaleViolet: hsl(276, 100%, 81%);
 }
 
 body {
@@ -63,5 +72,25 @@ body {
 		line-height: 28px;
 		font-weight: 400;
 		color: var(--clr-DarkGrayishViolet);
+	}
+}
+
+@media (min-width: 376px) {
+	.top-left-rec {
+		position: absolute;
+		left: -90px;
+		top: -318px;
+		border-bottom-left-radius: 255px;
+	}
+
+	.bottom-right-rec {
+		position: absolute;
+		right: -185px;
+		bottom: -337px;
+		border-top-right-radius: 255px;
+	}
+
+	.info {
+		float: right;
 	}
 }

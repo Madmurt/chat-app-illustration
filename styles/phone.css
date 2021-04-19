@@ -1,14 +1,3 @@
-:root {
-  --clr-White: hsl(0, 0%, 100%);
-  --clr-LightGrayishViolet: hsl(270, 20%, 96%);
-  --clr-LightMagenta: hsl(293, 100%, 63%);
-  --clr-LightViolet: hsl(264, 100%, 61%);
-  --clr-LightGray: hsl(276, 41%, 93%);
-  --clr-ModerateViolet: hsl(276, 55%, 52%);
-  --clr-DesaturatedDarkViolet: hsl(271, 15%, 43%);
-  --clr-VeryLightMagenta: hsl(289, 100%, 72%);
-  --clr-GrayishBlue: hsl(206, 6%, 79%); }
-
 .phone {
   position: relative;
   width: 247px;
@@ -51,6 +40,44 @@
     background: linear-gradient(to bottom, var(--clr-LightViolet), var(--clr-LightMagenta));
     border-top-left-radius: calc(30px - 10.25px);
     border-top-right-radius: calc(30px - 10.25px); }
+  .phone__user-details-container {
+    display: flex;
+    flex-direction: row;
+    height: 24px;
+    width: 196px;
+    margin: 0 auto;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between; }
+  .phone .fa-chevron-left {
+    color: var(--clr-White);
+    font-size: 0.875rem; }
+  .phone__avatar {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-left: 8px; }
+  .phone__text-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    margin-left: 8px; }
+  .phone__username {
+    color: var(--clr-White);
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 2px;
+    margin-top: 8px; }
+  .phone__user-status {
+    color: var(--clr-PaleViolet);
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 9px;
+    margin-top: 0px; }
+  .phone .fa-ellipsis-v {
+    color: var(--clr-White);
+    font-size: 0.5rem; }
   .phone__from-message-box {
     width: calc(128px - 16px);
     max-height: 34px;
@@ -161,6 +188,7 @@
     margin-top: 13.06px;
     width: 92.23px; }
   .phone .fa-chevron-circle-right {
+    color: var(--clr-VeryDarkDesaturatedViolet);
     font-size: 1.563rem;
     margin-top: 4.84px;
     margin-left: 72.35px; }
@@ -176,3 +204,10 @@
     font-size: 0.5rem;
     line-height: 11px;
     margin: 0; }
+
+@media (min-width: 376px) {
+  .phone {
+    position: relative;
+    float: left;
+    margin-left: 363px;
+    margin-top: 148px; } }
