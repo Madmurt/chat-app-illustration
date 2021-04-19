@@ -5,6 +5,7 @@
   --clr-LightViolet: hsl(264, 100%, 61%); }
 
 body {
+  margin: 0;
   padding: 64px 32px;
   font-family: 'Rubik', sans-serif;
   overflow-x: hidden;
@@ -55,7 +56,8 @@ body {
   --clr-LightGray: hsl(276, 41%, 93%);
   --clr-ModerateViolet: hsl(276, 55%, 52%);
   --clr-DesaturatedDarkViolet: hsl(271, 15%, 43%);
-  --clr-VeryLightMagenta: hsl(289, 100%, 72%); }
+  --clr-VeryLightMagenta: hsl(289, 100%, 72%);
+  --clr-GrayishBlue: hsl(206, 6%, 79%); }
 
 .phone {
   position: relative;
@@ -191,12 +193,27 @@ body {
       margin-left: 50px; }
   .phone__text-input {
     position: absolute;
+    display: flex;
+    flex-direction: row;
     width: 213px;
     height: 34px;
     bottom: 21px;
     left: 17px;
     background-color: var(--clr-White);
     border-radius: 16.9544px; }
+  .phone__placeholder-text {
+    color: var(--clr-GrayishBlue);
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: -0.0703125px;
+    margin-left: 19.42px;
+    margin-top: 13.06px;
+    width: 92.23px; }
+  .phone .fa-chevron-circle-right {
+    font-size: 1.563rem;
+    margin-top: 4.84px;
+    margin-left: 72.35px; }
   .phone__from-text {
     font-weight: 400;
     color: var(--clr-ModerateViolet);

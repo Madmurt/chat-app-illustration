@@ -5,6 +5,7 @@
   --clr-LightViolet: hsl(264, 100%, 61%); }
 
 body {
+  margin: 0;
   padding: 64px 32px;
   font-family: 'Rubik', sans-serif;
   overflow-x: hidden;
