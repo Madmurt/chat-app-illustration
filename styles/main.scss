@@ -75,7 +75,7 @@ body {
 	}
 }
 
-@media (min-width: 376px) {
+@media (min-width: 768px) {
 	.top-left-rec {
 		position: absolute;
 		left: -90px;
@@ -90,7 +90,20 @@ body {
 		border-top-right-radius: 255px;
 	}
 
+	body {
+		padding-top: 148px;
+		padding-left: 363px;
+	}
+
+	.container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 125px;
+	}
+
 	.info {
-		float: right;
+		width: 445px;
+		text-align: left;
 	}
 }

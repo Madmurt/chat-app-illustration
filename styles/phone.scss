@@ -281,9 +281,7 @@
 
 @media (min-width: 376px) {
 	.phone {
-		position: relative;
-		float: left;
-		margin-left: 363px;
-		margin-top: 148px;
+		min-width: 247px;
+		margin: 0px;
 	}
 }

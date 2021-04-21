@@ -57,7 +57,7 @@ body {
     font-weight: 400;
     color: var(--clr-DarkGrayishViolet); }
 
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .top-left-rec {
     position: absolute;
     left: -90px;
@@ -68,8 +68,17 @@ body {
     right: -185px;
     bottom: -337px;
     border-top-right-radius: 255px; }
+  body {
+    padding-top: 148px;
+    padding-left: 363px; }
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 125px; }
   .info {
-    float: right; } }
+    width: 445px;
+    text-align: left; } }
 
 .phone {
   position: relative;
@@ -280,7 +289,5 @@ body {
 
 @media (min-width: 376px) {
   .phone {
-    position: relative;
-    float: left;
-    margin-left: 363px;
-    margin-top: 148px; } }
+    min-width: 247px;
+    margin: 0px; } }
